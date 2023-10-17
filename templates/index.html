@@ -12,6 +12,12 @@
     <h4>There are no tasks. Create one below</h4>
 
     {% else %}   
+    <div class="form">
+        <form action="/" method="POST">
+            <input class="custom-textbox" type="text" name="content" id="content">
+            <input class="button" type="submit" value="+">
+        </form>
+    </div>
     <table>
         <tr>    
         <th>Task</th>
@@ -31,12 +37,7 @@
     </table>
     {% endif %}
 
-    <div class="form">
-        <form action="/" method="POST">
-            <input class="custom-textbox" type="text" name="content" id="content">
-            <input class="button" type="submit" value="+">
-        </form>
-    </div>
+   
 </div>
 {% endblock %}
 
